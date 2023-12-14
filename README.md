@@ -24,3 +24,5 @@ No endpoint for bird counts by region?
 - Stretch feature: arrows to show movement
 
 API Docs: https://documenter.getpostman.com/view/664302/S1ENwy59
+
+curl --location 'https://api.ebird.org/v2/data/obs/AU-QLD-BRI/recent?key=f9ia0shsovr2'
