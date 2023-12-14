@@ -1,4 +1,4 @@
-# Birds Near Me (Australia only)
+# Birds Near Me
 
 ## Idea
 
@@ -7,6 +7,7 @@
 - hits request
 
 - need big hash map of bird speciesCodes and images - with a placeholder for birds I don't have yet 850 species
+- stretch feature - pick a placeholder you like
 - google data store - free image hosting?
 
 Request: curl --location 'https://api.ebird.org/v2/data/obs/AU-QLD-BRI/recent' \
