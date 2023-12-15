@@ -2,7 +2,7 @@
 
 A project that pulls data from popular birding site eBird (API Docs: https://documenter.getpostman.com/view/664302/S1ENwy59)
 
-### Feature to do
+### To do list
 
 - Get region from user
 - Image lookup for popular bird breeds in Australia
