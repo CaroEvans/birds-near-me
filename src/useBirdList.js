@@ -4,5 +4,5 @@ import fetchBirdList from './fetchBirdList';
 export default function useBirdList(region) {
   const results = useQuery(['birds', region], fetchBirdList);
 
-  return [results?.data?.birds ?? [], results.status];
+  return [results?.data ?? [], results.status];
 }

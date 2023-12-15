@@ -10,10 +10,6 @@
 - stretch feature - pick a placeholder you like
 - google data store - free image hosting?
 
-Request: curl --location 'https://api.ebird.org/v2/data/obs/AU-QLD-BRI/recent' \
---header 'X-eBirdApiToken:{{key}}' OR curl --location -g 'https://api.ebird.org/v2/data/obs/geo/recent?lat={{LAT}}&lng={{LONG}}' \
---header 'X-eBirdApiToken:{{key}}'
-
 ### Questions
 
 No endpoint for bird counts by region?
@@ -24,5 +20,3 @@ No endpoint for bird counts by region?
 - Stretch feature: arrows to show movement
 
 API Docs: https://documenter.getpostman.com/view/664302/S1ENwy59
-
-curl --location 'https://api.ebird.org/v2/data/obs/AU-QLD-BRI/recent?key=f9ia0shsovr2'
