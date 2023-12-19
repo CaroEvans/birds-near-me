@@ -14,15 +14,13 @@ const queryClient = new QueryClient({
 
 const App = () => {
   return (
-    <div className="w-full">
+    <div className="w-full px-20 py-12">
       <header>
-        <h1 className="font-sans mx-auto text-center text-3xl">Birds near me</h1>
+        <h1 className="font-sans mx-auto text-center text-3xl mb-4">Birds near me</h1>
       </header>
-      <main>
-        <QueryClientProvider client={queryClient}>
-          <BirdList />
-        </QueryClientProvider>
-      </main>
+      <QueryClientProvider client={queryClient}>
+        <BirdList />
+      </QueryClientProvider>
     </div>
   );
 };
