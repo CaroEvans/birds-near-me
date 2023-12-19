@@ -8,9 +8,14 @@ const BirdList = () => {
         bird => (
           console.log(bird),
           (
-            <li className="border border-gray-200 h-80" key={bird.speciesCode}>
-              <img src="/images/masked_gnatcatcher.jpg" />
-              {bird.comName}
+            <li
+              className="border border-gray-200 h-80 bg-[url('/images/masked_gnatcatcher.jpg')] bg-cover rounded"
+              key={bird.speciesCode}
+            >
+              <div className="bg-white mx-auto rounded-t py-2">
+                <p className="text-center">{`${bird.howMany} ${bird.comName}s`}</p>
+                <p className="text-center">{bird.locName}</p>
+              </div>
             </li>
           )
         )
