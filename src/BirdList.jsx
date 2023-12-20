@@ -15,6 +15,7 @@ const BirdList = () => {
               <div className="bg-white mx-auto rounded-t py-2">
                 <p className="text-center">{`${bird.howMany} ${bird.comName}s`}</p>
                 <p className="text-center">{bird.locName}</p>
+                <p className="text-center">{bird.obsDt}</p>
               </div>
             </li>
           )
