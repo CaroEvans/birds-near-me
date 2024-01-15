@@ -1,7 +1,9 @@
 import { createRoot } from 'react-dom/client';
 import BirdList from './BirdList';
-
+import { CssVarsProvider } from '@mui/joy/styles';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import ModeToggle from './ModeToggle';
+import { Sheet, Typography } from '@mui/joy';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -14,14 +16,17 @@ const queryClient = new QueryClient({
 
 const App = () => {
   return (
-    <div className="w-full px-20 py-12">
-      <header>
-        <h1 className="font-sans mx-auto text-center text-3xl mb-4">Birds near me</h1>
-      </header>
-      <QueryClientProvider client={queryClient}>
-        <BirdList />
-      </QueryClientProvider>
-    </div>
+    <CssVarsProvider defaultMode="system">
+      <Sheet color="neutral" sx={{ p: 4 }}>
+        <header>
+          <Typography level="h1" fontFamily="Climate Crisis" fontWeight="400" textAlign="center">Birds near me</Typography>
+        </header>
+        <ModeToggle/>
+        <QueryClientProvider client={queryClient}>
+          <BirdList />
+        </QueryClientProvider>
+      </Sheet>
+    </CssVarsProvider>
   );
 };
 

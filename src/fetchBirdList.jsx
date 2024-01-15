@@ -12,7 +12,7 @@ const fetchBirdList = async ({ queryKey }) => {
   const apiResponse = await fetch(
     `https://api.ebird.org/v2/data/obs/${region}/recent?key=${
       import.meta.env.VITE_EBIRD_API_KEY
-    }&detail=full&maxResults=20`
+    }&detail=full&maxResults=12`
   );
 
   if (!apiResponse.ok) {
