@@ -17,14 +17,16 @@ const queryClient = new QueryClient({
 const App = () => {
   return (
     <CssVarsProvider defaultMode="system">
-      <Sheet color="neutral" sx={{ p: 4 }}>
-        <header>
-          <Typography level="h1" fontFamily="Climate Crisis" fontWeight="400" textAlign="center">Birds near me</Typography>
-        </header>
-        <ModeToggle/>
-        <QueryClientProvider client={queryClient}>
-          <BirdList />
-        </QueryClientProvider>
+      <Sheet sx={{ px: 10, py: 5 }}>
+        <Sheet sx={{ mx: 'auto', maxWidth: '90rem' }}>
+          <header>
+            <Typography level="h1" fontFamily="Climate Crisis" fontWeight="400" textAlign="center" sx={{ px: 10, py: 5 }} >Birds near me</Typography>
+          </header>
+          <ModeToggle/>
+          <QueryClientProvider client={queryClient}>
+            <BirdList />
+          </QueryClientProvider>
+        </Sheet>
       </Sheet>
     </CssVarsProvider>
   );

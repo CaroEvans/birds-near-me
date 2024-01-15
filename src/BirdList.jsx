@@ -1,10 +1,5 @@
 import useBirdList from './useBirdList';
-import AspectRatio from '@mui/joy/AspectRatio';
-import Card from '@mui/joy/Card';
-import CardContent from '@mui/joy/CardContent';
-import CardOverflow from '@mui/joy/CardOverflow';
-import Typography from '@mui/joy/Typography';
-import Divider from '@mui/joy/Divider';
+import { Card, CardContent, CardOverflow, Typography, Divider, AspectRatio } from '@mui/joy';
 
 const BirdList = () => {
   const [birds] = useBirdList(import.meta.env.VITE_REGION);
@@ -12,7 +7,6 @@ const BirdList = () => {
     <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {birds.map(
         bird => (
-          console.log(bird),
           (
             <li
               key={bird.speciesCode}
